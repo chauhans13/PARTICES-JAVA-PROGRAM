@@ -18,9 +18,10 @@ public class ToyDistributionInCircularWayPositionSelectRandom {
 	public static void main(String[] args) throws IOException{
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int[] arr = null;
-		System.out.println("\nPlease enter the Nth size of array like(10, 8, 3, 1)=");
+		
+		System.out.println("\nPlease enter the Nth size of array like(10,8,3,1)=");
 		String[] values = br.readLine().split(",");
+		int[] arr = new int[values.length];
 		for(int i=0;i<values.length;i++) {
 			arr[i] = Integer.parseInt(values[i]);
 		}
@@ -31,11 +32,13 @@ public class ToyDistributionInCircularWayPositionSelectRandom {
 		int startingIndex = Integer.parseInt(br.readLine());
 		
 		int pos = findTheLastPositionOfLastChilder(arr,toys,startingIndex);
+		
+		System.out.println("\nPostion of last getting toy children is="+pos);
 	}
 
 	private static int findTheLastPositionOfLastChilder(int[] arr, int toys, int startingIndex) {
 		
-		return 0;
+		return (((toys%arr.length)+startingIndex) -1);
 	}
 
 }

@@ -23,9 +23,9 @@ public class NumberOfTripletsArray {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    
-	    System.out.println("\nPlease enter the Nth size of array like(10, 8, 3, 1)=");
+	    System.out.println("\nPlease enter the Nth size of array likelike(10,8,3,1)=");
 	    String[] values = br.readLine().split(",");
-	    int[] arr = null ;
+	    int[] arr = new int[values.length];
 	    for(int i =0 ; i<values.length; i++){
 	    	arr[i] = Integer.parseInt(values[i]);
 	    }
