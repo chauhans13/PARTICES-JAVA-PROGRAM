@@ -42,11 +42,11 @@ public class Decoder {
 	            switch (seqElement.getTagNo()) {
 	                case MSCRecordType:
 	                    DEROctetString recordTypeOctet =(DEROctetString)seqElement.getObject();
-	                    int recordType = Integer.valueOf(Hex.toHexString(recordTypeOctet.getOctets()));
+	                    //int recordType = Integer.valueOf(Hex.toHexString(recordTypeOctet.getOctets()));
 	                    break;
 	                case CallingImsi:
 	                    DEROctetString  CallingImsiOctet =(DEROctetString)seqElement.getObject();
-	                    String CallingImsi = Hex.toHexString(CallingImsiOctet.getOctets());
+	                  //  String CallingImsi = Hex.toHexString(CallingImsiOctet.getOctets());
 	                    break;
 
 	            }
